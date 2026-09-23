@@ -58,7 +58,7 @@ in at least 4 of 5 tries.
 
 ---
 
-## 4. For at least 3 of my 5 test questions, the retrieved chunks should include the answer.
+## 4. Handles errors gracefully.
 
 <!-- YOU WRITE THIS ONE.
 
@@ -74,11 +74,11 @@ in at least 4 of 5 tries.
 
 **Why this target:**
 
-Each answer should be found within 80 characters
+When the search tool returns nothing, the agent says so and moves on instead of crashing — in all 5 of my triggered failures
 
 ---
 
-## 5. For any question that it does not answer correctly, there answer should not exist in the corpus.
+## 5. Honest.
 
 <!-- YOU WRITE THIS ONE TOO.
 
@@ -90,7 +90,7 @@ Each answer should be found within 80 characters
 
 **Why this target:**
 
-When answers overlap, at most two chunks should be used.
+When an answer is given, it is not made up or a false claim.
 
 ---
 

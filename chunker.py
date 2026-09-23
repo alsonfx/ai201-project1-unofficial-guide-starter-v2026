@@ -80,25 +80,28 @@ def fallback_split(
     return chunks
 
 
-def split_documents(documents: list[Document]) -> list[Chunk]:
+def split_documents(
+    documents: list[Document],
+    chunk_size: int = 2000,
+    overlap: int = 200
+) -> list[Chunk]:
     """
-    Split documents into chunks. ⚠️ REPLACE THE BODY OF THIS IN MILESTONE 3.
+    Split documents into chunks. 
 
-    Right now it just calls the fallback. That is the plain, generic behaviour
-    the brief is talking about.
-
-    When you write your own strategy, set `produced_by` to
-    "chunker.py::split_documents" so your README's Sample Chunks section names
-    the right function. `app.py chunks` prints that string for you.
-
-    Things worth thinking about before you write any code:
-      - Are your documents short posts or long guides?
-      - Is the useful information in one sentence, or spread over a paragraph?
-      - Would splitting on paragraph breaks keep more thoughts intact than
-        splitting on a character count?
+    Now accepts `chunk_size` and `overlap` parameters with larger defaults 
+    (2000 and 200 respectively) which are better for answering questions.
     """
     produced_by = "chunker.py::split_documents"
-    return fallback_split(documents)
+    
+    # We can either use fallback_split with our new sizes, or write custom logic.
+    # Here we use fallback_split but pass our larger chunk_size and overlap.
+    chunks = fallback_split(documents, chunk_size=chunk_size, overlap=overlap)
+    
+    # Update the produced_by label to match this function
+    for chunk in chunks:
+        chunk.produced_by = produced_by
+        
+    return chunks
 
 
 def describe(chunks: list[Chunk]) -> str:

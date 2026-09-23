@@ -23,6 +23,7 @@ For at least 4 of my 5 test questions, the retrieved chunks include one that
 contains the answer.
 
 **Why this target:**
+
 <!-- e.g. "One of my questions is about a topic only two documents mention, so
      I expect that one to be hard." -->
 
@@ -33,6 +34,7 @@ contains the answer.
 Every answer the system produces names at least one source document.
 
 **Why this target:**
+
 <!-- Why all five and not four? What about your setup makes that achievable —
      or what would have to go wrong for it not to be? -->
 
@@ -50,12 +52,13 @@ in at least 4 of 5 tries.
      just keep five of them, or the "4 of 5" above has nothing to be 4 of. -->
 
 **Why this target:**
+
 <!-- What did your distances look like when you set the cutoff in Milestone 4?
      Was there a clean gap, or did the two groups overlap? -->
 
 ---
 
-## 4. Something about your chunks
+## 4. Chunk size should be around 80.
 
 <!-- YOU WRITE THIS ONE.
 
@@ -69,15 +72,13 @@ in at least 4 of 5 tries.
        - "No chunk is shorter than 200 characters, since anything below that
           in my corpus turned out to be a heading with no content under it." -->
 
-
-
 **Why this target:**
 
-
+Each answer should be found within 80 characters
 
 ---
 
-## 5. Your choice
+## 5. Overlaps should be around 120.
 
 <!-- YOU WRITE THIS ONE TOO.
 
@@ -87,11 +88,9 @@ in at least 4 of 5 tries.
      present — anything, as long as it names a number or an observable
      outcome. -->
 
-
-
 **Why this target:**
 
-
+When answers overlap, at most two chunks should be used.
 
 ---
 

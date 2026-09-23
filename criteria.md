@@ -58,7 +58,7 @@ in at least 4 of 5 tries.
 
 ---
 
-## 4. Chunk size should be around 80.
+## 4. For at least 3 of my 5 test questions, the retrieved chunks should include the answer.
 
 <!-- YOU WRITE THIS ONE.
 
@@ -78,7 +78,7 @@ Each answer should be found within 80 characters
 
 ---
 
-## 5. Overlaps should be around 120.
+## 5. For any question that it does not answer correctly, there answer should not exist in the corpus.
 
 <!-- YOU WRITE THIS ONE TOO.
 

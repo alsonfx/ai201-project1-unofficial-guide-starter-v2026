@@ -127,11 +127,16 @@ Laundry costs $1.75 wash, $1.75 dry, app-based. On noise: moderate; the building
 <!-- One complete question and answer, pasted as text, with the source line
      visible. Milestone 4. -->
 
-**Question:**
+**Question: How many exams do you take in world history class?**
 
 **Answer:**
 
 ```
+Based on the documents, there are no exams in the world history class (HIST 118 Modern World History).
+
+Source: `course_hist_118.txt` (also mentioned in `course_hist_118_exams.txt`)
+
+Sources retrieved: course_engl_205.txt, course_engl_205_exams.txt, course_hist_118.txt, course_hist_118_exams.txt, course_stat_150.txt
 ```
 
 **My relevance cutoff:**
@@ -147,7 +152,7 @@ Laundry costs $1.75 wash, $1.75 dry, app-based. On noise: moderate; the building
 
 | Question | In corpus? | Best distance |
 | -------- | ---------- | ------------- |
-|          |            |               |
+| 1        | Yes        | .3653         |
 
 ## How I Used AI
 
@@ -160,9 +165,9 @@ Laundry costs $1.75 wash, $1.75 dry, app-based. On noise: moderate; the building
 
      Milestone 5. -->
 
-**1.**
+**1. I used AI to assist me in defining the chunking function.**
 
-**2.**
+**2. I used AI to help me get a better understand of the answer and retrieval parameters.**
 
 <!-- ── Stretch features ─────────────────────────────────────────────────────
      Doing one? Say so here BEFORE you start. A feature this README never
